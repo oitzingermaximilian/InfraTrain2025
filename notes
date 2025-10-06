@@ -15,5 +15,5 @@ Transmision increase rate done as % , Scenario sets that, for example 5% per yea
 
 
 AD MODEL URBS-EXTENSION:
-  - comparing BESS from urbs to GENESYS-Mod schows 50% lower Bess installed in our model. Propably due to lower Energy Demand and strict linkage to solarPV expansion!! 
+  - comparing BESS from urbs to GENESYS-Mod schows 50% lower Bess installed in our model. Propably due to way lower Energy Demand and strict linkage to solarPV expansion in urbs!! 
 
