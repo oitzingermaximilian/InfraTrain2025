@@ -1,0 +1,13 @@
+October 6th:
+
+An Energy System Model covers at least two Sector --> Elec Only is not ESOM! Zitat Constantin
+
+- Sector only Model has boundaries
+- Sector coupling also looks at where Energy is best used.
+
+P2H, P2M, P2G, DU (PowertoHeat, PowertoMobility, PowertoGas, Direct Use)
+
+Sectors are always described in input/output relations with efficiency, so pretty easy to describe. Abllity in urbs exists in its basics, but no in depth equation for Electrolyses etc. 
+
+A model does not predict anything, it shows Pathways! Ways to the future, not a prediction. We can not describe anything, we can though create robust results for short-term. 
+
