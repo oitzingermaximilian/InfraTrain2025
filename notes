@@ -11,6 +11,8 @@ Sectors are always described in input/output relations with efficiency, so prett
 
 A model does not predict anything, it shows Pathways! Ways to the future, not a prediction. We can not describe anything, we can though create robust results for short-term. 
 
+Transmision increase rate done as % , Scenario sets that, for example 5% per year. Invest in €/GW/km. 
+
 
 AD MODEL URBS-EXTENSION:
   - comparing BESS from urbs to GENESYS-Mod schows 50% lower Bess installed in our model. Propably due to lower Energy Demand and strict linkage to solarPV expansion!! 
