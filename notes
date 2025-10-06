@@ -7,7 +7,8 @@ An Energy System Model covers at least two Sector --> Elec Only is not ESOM! Zit
 
 P2H, P2M, P2G, DU (PowertoHeat, PowertoMobility, PowertoGas, Direct Use)
 
-Sectors are always described in input/output relations with efficiency, so pretty easy to describe. Abllity in urbs exists in its basics, but no in depth equation for Electrolyses etc. 
+Sectors are always described in input/output relations with efficiency, so pretty easy to describe. Abllity in urbs exists in its basics, but no in depth equation for Electrolyses etc. For next paper bring urbs to
+a state where it maps the most Important Sectors and also Different Energy Demands, not Elec only, aso Heat, hydrogen for industry etc.
 
 A model does not predict anything, it shows Pathways! Ways to the future, not a prediction. We can not describe anything, we can though create robust results for short-term. 
 
