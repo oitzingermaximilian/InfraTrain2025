@@ -1,21 +1,63 @@
 October 6th:
 
-An Energy System Model covers at least two Sector --> Elec Only is not ESOM! Zitat Constantin
+  An Energy System Model covers at least two Sector --> Elec Only is not ESOM! Zitat Constantin
+  
+  - Sector only Model has boundaries
+  - Sector coupling also looks at where Energy is best used.
+  
+  P2H, P2M, P2G, DU (PowertoHeat, PowertoMobility, PowertoGas, Direct Use)
+  
+  Sectors are always described in input/output relations with efficiency, so pretty easy to describe. Abllity in urbs exists in its basics, but no in depth equation for Electrolyses etc. For next paper bring urbs to
+  a state where it maps the most Important Sectors and also Different Energy Demands, not Elec only, aso Heat, hydrogen for industry etc.
+  
+  A model does not predict anything, it shows Pathways! Ways to the future, not a prediction. We can not describe anything, we can though create robust results for short-term. 
+  
+  Transmision increase rate done as % , Scenario sets that, for example 5% per year. Invest in €/GW/km. 
 
-- Sector only Model has boundaries
-- Sector coupling also looks at where Energy is best used.
 
-P2H, P2M, P2G, DU (PowertoHeat, PowertoMobility, PowertoGas, Direct Use)
+  AD MODEL URBS-EXTENSION:
+    - comparing BESS from urbs to GENESYS-Mod schows 50% lower Bess installed in our model. Propably due to way lower Energy Demand and strict linkage to solarPV expansion in urbs!! 
 
-Sectors are always described in input/output relations with efficiency, so pretty easy to describe. Abllity in urbs exists in its basics, but no in depth equation for Electrolyses etc. For next paper bring urbs to
-a state where it maps the most Important Sectors and also Different Energy Demands, not Elec only, aso Heat, hydrogen for industry etc.
+October 7th:
 
-A model does not predict anything, it shows Pathways! Ways to the future, not a prediction. We can not describe anything, we can though create robust results for short-term. 
+GENESYS MOD in Perfect Foresight, has availability to do rolling horizon, but not inside a year. 
 
-Transmision increase rate done as % , Scenario sets that, for example 5% per year. Invest in €/GW/km. 
+Thought: does it make sense to rewrite my model? Structure it differently? It does not look clean, we also have to think about temporal resolution, potentially
+cluster and solve for representive week for e.g with hourly resolution. Atlite for weather data and generates timeseries for model use! Download ERA5 data on PC
+and then run Atlite locally to create "cutouts" so basically like its done in pypsa. I mean this at least should not be too hard right?
+But dont forget, this is not our scope, we want to model in low resolution but with robust results that can display the supply chain.
+
+How do you decide on a representative weather year?
+A: There is no right Weather Year, you could check Sensitivity from a couple years. Or run a very bad one as sort of worst case. 
+Sensitivity Analysis, explain why you used this year.
+
+Timeseries: 
+Clustering or representative Time Data, avg winter, avg spring, avg, autumn, avg summer day --> disjoint time series. Cluster Size Important to choose.
+Reduced Timeseries: not a 1:1 cutout, we try to use an algorithm to reduce timeseries but keep characteristics. 
+Every 25th hour gets sampled starting Jan 1st ending Dec 31st.Then this is applied to another non-linear optimization that scales this timeseries to match original one.
+So Genesysmod gets reasonable results with 16 timesteps in generation capcity, but it is important to mention, 
+that the Demand is spread across these timesteps and is fluctuating, we have to do this, now it is evenly spreaded in urbs-extension!!! 
+Also the LoadFactors have to be adapted then.
+
+What is the ideal resolution: it depends on what you want to do. Probably for our case with policy design etc. what we do is okay. 
+
+Time Slices: defined by user ex ante and then averaged across timesteps. What we do in urbs-extension with a year slice. Not Ideal to analyze Electricity. 
+
+Thought: I think we definitely need to think about adding other Sectors to actually be able to say how much wind and pv we need, 
+hydrogen would be interesting and also the capacity expansion in general, since the Demand is way higher as seen in the first urbs-solar Paper. 
+
+Flexibility&Storage Session:
+
+- DSM, Storage, BEV, Heat, Transmission, Dispatchable PP, Distribution reinforcement
+- Storage: PHS, BESS, Hydrogen, Compressed Air Energy Storage
+- Capex, opex, o&m, Lifetime / Cycles, Response Time, Roundtrip Efficiency, Energy to Power ratio (E2P) 
+- Energiepark Bad Lauchstädt Hydrogen Produciton on Site and direct shipping to a refinery: provides 2% of yearly hydrogen demand (30MW Electrolyser, sau org)
 
 
-AD MODEL URBS-EXTENSION:
-  - comparing BESS from urbs to GENESYS-Mod schows 50% lower Bess installed in our model. Propably due to way lower Energy Demand and strict linkage to solarPV expansion in urbs!! 
+
+
+
+
+
 
 
