@@ -55,14 +55,19 @@ October 7th:
 
 October 9th:
 
-Pathways:
-- Discount Rate: 5-10%
-- PP Efficiency should not decrease ove time, rather introduce a new more efficient technology.
+  Pathways:
+  - Discount Rate: 5-10%
+  - PP Efficiency should not decrease ove time, rather introduce a new more efficient technology.
+  
+  General Comment: We could probably run in larger temporal or spatial resolution! Solving Time is very very low in urbs atm <2 seconds. 
+  And no storage&Transmission probably keeps computational time very low.
+  
+  Get the Duals from our Res Vertex, thats actaully the LCOE. 
 
-General Comment: We could probably run in larger temporal or spatial resolution! Solving Time is very very low in urbs atm <2 seconds. 
-And no storage&Transmission probably keeps computational time very low.
+Key Takeaways:
 
-Get the Duals from our Res Vertex, thats actaully the LCOE. 
+need to get rid of increasing efficiency. It should be introduced as a new Technology. 
+Look at Sector Coupling, Heating and Industry in the first steps. Also then Demand would match better with the TYNDP in my opinion.
 
 
 
