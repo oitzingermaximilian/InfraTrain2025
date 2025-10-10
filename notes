@@ -70,7 +70,8 @@ need to get rid of increasing efficiency. It should be introduced as a new Techn
 Look at Sector Coupling, Heating and Industry in the first steps. Also then Demand would match better with the TYNDP in my opinion.
 
 ToDo: Also adapt Input data, regarding the new technologies with better Efficiencies, so cap-up till certain year 0, then activate it. 
-Probably create a script that writes my Excel Files in the Structure i need.
+Probably create a script that writes my Excel Files in the Structure i need. Question is if we need a higher spatial and temporal resolution, 
+so transmission grids and storage becomes necessary.
 
 
 
